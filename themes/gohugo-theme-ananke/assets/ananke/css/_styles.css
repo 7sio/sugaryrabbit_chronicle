@@ -19,3 +19,9 @@
   overflow-wrap: break-word;
 }
 
+.box,
+.box-img,
+.box-text{
+  display: inline-block;
+  vertical-align: middle;
+}

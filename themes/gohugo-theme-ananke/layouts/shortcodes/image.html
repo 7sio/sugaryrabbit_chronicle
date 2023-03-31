@@ -1,0 +1,23 @@
+<div class="box">
+  <div class="box-img">
+    <img src="{{ .Get "src" }}"
+           {{- if or (.Get "alt") (.Get "caption") }}
+           alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+           {{- end -}}
+           {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+           {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+      /><!-- Closing img tag -->  
+  </div>
+  <div class="box-text">
+      {{- if or (.Get "title") -}}
+              {{ with (.Get "title") -}}
+                  <h1>{{ . }}</h1>
+              {{- end -}}
+      {{- end }}
+      {{- if or (.Get "caption") -}}
+              {{- if or (.Get "caption") -}}<p>
+                  {{- .Get "caption" | markdownify -}}
+              {{- end }}
+      {{- end }}
+  </div>
+</div>

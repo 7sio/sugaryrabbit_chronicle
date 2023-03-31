@@ -4,14 +4,19 @@
   <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
     <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-40" }}">
       {{ partial "site-navigation.html" .}}
-      <div class="embed video-player tc-l pt4">
+<!--       <div class="embed video-player tc-l pt4">
       <iframe class="youtube-player" type="text/html"
           width="640" height="360"
           src="https://www.youtube.com/embed/_ORrGh27fgA"
           allowfullscreen frameborder="0">
       </iframe>
       </div>
-      <div class="tc-l pt3 ph3 ph4-ns">
+       -->      
+       <div class="tc-l pt5 ph3 ph4-ns"></div>
+
+       <div class="tc-l pt7 ph3 ph4-ns"></div>
+
+       <div class="tc-l pt7 ph3 ph4-ns">
         {{ with .Params.description }}
           <h2 class="fw1 f7 f2-l white-80 measure-wide-l center mt5">
             {{ . }}
