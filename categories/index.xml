@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on SugaryRabbit Chronicle</title>
-    <link>https://sugaryrabbit.com/categories/</link>
+    <link>https://7sio.github.io/sugaryrabbit_chronicle/categories/</link>
     <description>Recent content in Categories on SugaryRabbit Chronicle</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language><atom:link href="https://sugaryrabbit.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja-jp</language><atom:link href="https://7sio.github.io/sugaryrabbit_chronicle/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
