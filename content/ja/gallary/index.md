@@ -6,6 +6,6 @@ menu:
   main:
     weight: 1
 ---
-{{< figure src="/images/gallery1.png" title="" >}}
+{{< figure src="sugaryrabbit_chronicle/images/gallery1.png" title="" >}}
 {{< figure src="/images/gallery2.png" title="" >}}
 {{< figure src="/images/gallery3.png" title="" >}}
