@@ -2,19 +2,32 @@
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
-    <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-60" }}">
+    <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-40" }}">
       {{ partial "site-navigation.html" .}}
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          {{ .Title | default .Site.Title }}
-        </h1>
+      <div class="embed video-player tc-l pt4">
+      <iframe class="youtube-player" type="text/html"
+          width="640" height="360"
+          src="http://www.youtube.com/embed/_ORrGh27fgA"
+          allowfullscreen frameborder="0">
+      </iframe>
+      </div>
+      <div class="tc-l pt3 ph3 ph4-ns">
         {{ with .Params.description }}
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+          <h2 class="fw1 f7 f2-l white-80 measure-wide-l center mt5">
             {{ . }}
           </h2>
         {{ end }}
+        <h1 class="f2 fw2 white-90 mb0 1h-title">
+          {{ with .Site.Params.site_logo }}
+            <img src="{{ relURL . }}" class="w100 mw7-ns" alt="{{ $.Site.Title }}" />
+          {{ else }}
+          {{ .Title | default .Site.Title }}
+          {{ end }}
+        </h1>
+
       </div>
-    </div>
+  </div>
+
   </header>
 {{ else }}
   <header>
